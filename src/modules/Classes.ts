@@ -13,17 +13,17 @@ export class Classes{
                 protected name: string,
                 protected module: MODULE
                 )
-                {
-                this.id = id;
-                this.name = name;
-                this.module = module
+                {} 
+
+        public async getId(){
+                return this.id
+        }
+        public async getName(){
+                return this.name
+        }
+        public async getModule(){
+                return this.module
         }
 }
 
 
-// export type  Classes = {
-//         id: string,
-//         name: string,
-//         module: string
-
-// }

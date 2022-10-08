@@ -10,13 +10,7 @@ export class Specialities {
         constructor(
                 protected id: string,
                 protected name: SpecialitiesName
-        ){
-                this.id = id;
-                this.name = name;
-        }
+        ){}
+             
 }
 
-// export type Specialities = {
-//         id: string,
-//         name: string
-// }

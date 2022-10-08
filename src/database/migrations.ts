@@ -73,7 +73,6 @@ const createTeachersTable = async () => {
             name VARCHAR(255) NOT NULL,
             email VARCHAR(255) NOT NULL UNIQUE,
             birthday DATE NOT NULL,
-            specialties VARCHAR(255) NOT NULL,
             class_id VARCHAR(255) NOT NULL UNIQUE,
             FOREIGN KEY (class_id) REFERENCES Classes_Table(id)      
        )
