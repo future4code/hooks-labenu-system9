@@ -18,12 +18,23 @@ export class Students extends Usuario {
              )
              this.hobby = hobby
         }
+        public async getId(){
+            return this.id
+        }
+        public async getName(){
+            return this.name
+        }
+        public async getEmail(){
+            return this.email
+        }
+        public async getBirthday(){
+            return this.birthday
+        }
+        public async getClassId(){
+            return this.class_id
+        }
+        public async getHobby(){
+            return this.hobby
+        }
 }
 
-// export type Students = {
-//         id: string,
-//         name: string,
-//         email: string,
-//         birthday: string,
-//         class_id: string
-// }
