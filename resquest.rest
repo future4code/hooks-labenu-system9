@@ -25,3 +25,14 @@ Content-Type: application/json
 
 ### Get All Student
 GET http://localhost:3003/students
+
+### Get Class
+GET http://localhost:3003/allClasses
+### Create class
+POST http://localhost:3003/createClass
+Content-Type: application/json
+
+{
+    "name": "Fisica",
+    "Modulo": "ZERO"
+}
