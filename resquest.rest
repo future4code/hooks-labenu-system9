@@ -9,3 +9,19 @@ Content-Type: application/json
 {
     "name": "cantar"
 }
+
+### Get All Hobbies
+GET http://localhost:3003/hobbies
+
+### Create Student
+POST http://localhost:3003/createStudent
+Content-Type: application/json
+
+{
+    "name": "Beatriz",
+    "email": "teste2@email.com",
+    "birthday": "2000-01-01"
+}
+
+### Get All Student
+GET http://localhost:3003/students

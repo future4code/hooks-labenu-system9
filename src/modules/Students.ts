@@ -7,7 +7,7 @@ export class Students extends Usuario {
             email: string,
             birthday: string,
             class_id: string,
-            protected hobby: Array<string>
+            // protected hobby: Array<string>
         ){
             super(
                 id,
@@ -16,7 +16,7 @@ export class Students extends Usuario {
                 birthday,
                 class_id
              )
-             this.hobby = hobby
+            //  this.hobby = hobby
         }
         public async getId(){
             return this.id
@@ -33,8 +33,8 @@ export class Students extends Usuario {
         public async getClassId(){
             return this.class_id
         }
-        public async getHobby(){
-            return this.hobby
-        }
+        // public async getHobby(){
+        //     return this.hobby
+        // }
 }
 
