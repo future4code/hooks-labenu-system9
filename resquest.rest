@@ -1,0 +1,11 @@
+### Get all users
+GET http://localhost:3003/user
+
+### Create Hobby
+
+POST http://localhost:3003/createHobby
+Content-Type: application/json
+
+{
+    "name": "cantar"
+}
