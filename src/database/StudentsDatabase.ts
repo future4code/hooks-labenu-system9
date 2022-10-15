@@ -29,8 +29,8 @@ export class StudentsDatabase extends BaseDatabase{
             name: student.getName(),
             email: student.getEmail(),
             birthday: student.getBirthday(),
-            class_id:Date.now().toString(),
-            hobby: student.getHobby()
+            class_id:Date.now().toString()
+            // hobby: student.getHobby()
         })
     } 
 }

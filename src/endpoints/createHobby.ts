@@ -6,20 +6,17 @@ export const createHobby = async (req: Request, res: Response) => {
     let errorCode = 400
     try {
         const name = req.body.name
-        
+        const id = Date.now().toString()
         if (!name) {
             throw new Error("Body inválido.")
         }
 
-          const hobby = new Hobby(
-            Date.now().toString(),
-            name
-        )
-            console.log(hobby)
+        const hobby = new Hobby(id, name)
+
         const hobbyDatabase = new HobbyDatabase()
         await hobbyDatabase.createHobby(hobby)
             
-        res.status(201).send({ message: "Hobby criado", hobby: hobby })
+        res.status(201).send({ hobby })
     } catch (error) {
         res.status(errorCode).send(error)
     }
